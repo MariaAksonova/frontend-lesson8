@@ -1,0 +1,712 @@
+@font-face {
+    font-family: "MontserratBold";
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "CrimsonTextItalic";
+    src: url('../fonts/CrimsonText-Italic.ttf') format('truetype');
+}
+
+.container {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+h2, h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font: 48px "MontserratBold", sans-serif;
+}
+
+h2 {
+    margin-top: 140px;
+    margin-bottom: 40px;
+}
+
+p {
+    text-align: center;
+    color: #8a8f9c;
+    font: 24px "CrimsonTextItalic", sans-serif;
+}
+
+.main-nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+.main-nav .active {
+color: #d89b64;
+}
+
+.main-header a {
+    color: #000;
+    text-decoration: none;
+    font: 24px "MontserratBold", sans-serif;
+}
+
+.main-header {
+    padding: 70px 0;
+    overflow: hidden;
+}
+
+.main-header .logo {
+    float: left;
+}
+
+.main-header img {
+    vertical-align: -40%;
+}
+
+.landing .main-header a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.welcome-section {
+    background: #151a27 url("../images/bg-top.jpg") 50% no-repeat;
+    background-size: 2500px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-nav {
+    float: right;
+}
+
+.main-nav li {
+    display: inline-block;
+    padding: 0 32px;
+}
+
+.landing .main-nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-header li a:hover {
+    color: #d89b64;
+}
+
+.slider{
+    position: relative;
+}
+
+.slider img {
+    max-width: 680px;
+    min-height: 560px;
+    margin: 0 auto;
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-prev {
+    background: url("../images/prev-arrow.png") 50% no-repeat;
+    position: absolute;
+    font-size: 0;
+    height: 111px;
+    width: 57px;
+    top: calc(50% - 55px);
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-next {
+    background: url("../images/next-arrow.png") 50% no-repeat;
+    position: absolute;
+    font-size: 0;
+    height: 111px;
+    width: 57px;
+    right: 0;
+    top: calc(50% - 55px);
+}
+
+.owl-dot span {
+    color: #fff;
+    font: 18px "MontserratBold", sans-serif;
+    content: '•';
+}
+
+.welcome-section .bottom {
+    height: 110px;
+}
+
+.welcome-section .button {
+    float: right;
+    padding: 30px 50px;
+    color: #d89b64;
+    border: 1px solid #eee;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 18px "MontserratBold", sans-serif;
+    position: absolute;
+    right: 90px;
+    bottom: 90px;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 5%;
+    left: calc(50% - 100px);
+    line-height: 36px;
+    text-decoration: none;
+    color: #485471;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header {
+    background: url("../images/gratia.png") 50% no-repeat;
+    max-width: 596px;
+    min-height: 188px;
+    margin: 0 auto;
+}
+
+.flex-item img {
+    max-width: 100%;
+}
+
+.flex-item {
+    position: relative;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-item div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0, .6);
+    color: #d89b64;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .3s ease-out;
+}
+
+.flex-container a:hover div{
+    background: none;
+    color: #000;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+.check-btn {
+    margin: 80px 0 90px 0;
+    padding: 30px 50px;
+    color: #d89b64;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #fff;
+    font: 18px "MontserratBold", sans-serif;
+    border: none;
+    border-bottom: 1px solid #d89b64;
+}
+
+.perfection {
+    text-align: center;
+}
+
+hr {
+    width: 44px;
+    text-align: center;
+    color: #eee;
+}
+
+.perfection h3 {
+    margin-bottom: 20px;
+}
+
+.perfection p {
+    margin-top: 20px;
+}
+
+.perfection header {
+    margin-bottom: 100px;
+}
+
+.details {
+    background: url("../images/bg-mid.jpg") 50% no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-we-reach {
+    padding-bottom: 140px;
+}
+
+.white-section {
+    width: 65%;
+    height: 60%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside {
+    background-color: #fff;
+    border: 1px solid #eee;
+    width: 90%;
+    height: 84%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.white-section .button {
+    text-align: center;
+    padding: 30px 50px;
+    color: #d89b64;
+    border: 1px solid #eee;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 18px "MontserratBold", sans-serif;
+}
+
+.how-we-reach-list {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.how-we-reach-list li {
+    width: 30%;
+    min-height: 370px;
+    background: url("../images/box1.png") 50% no-repeat;
+    background-size: cover;
+    padding: 0 20px;
+    transition: all .3s ease-out;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.how-we-reach-list a {
+    text-decoration: none;
+}
+
+.how-we-reach-list li:hover {
+    background: rgba(19, 24, 36, .9);
+    min-height: 370px;
+    transform: scaleY(1.1);
+}
+
+.how-we-reach header {
+    margin-bottom: 100px;
+}
+
+h4 {
+    text-transform: uppercase;
+    text-align: center;
+    font: 24px "MontserratBold", sans-serif;
+    color: #d89b64;
+    margin-bottom: 40px;
+}
+
+footer {
+    border-top: 1px solid #eee;
+    position: relative;
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+footer img {
+    left: calc(50% - 68px);
+    position: absolute;
+    top: -68px;
+    display: block;
+}
+
+.footer-text {
+    color: #8a8f9c;
+    margin-top: 14px;
+    margin-bottom: 30px;
+    font: 18px "CrimsonTextItalic", sans-serif;
+}
+
+footer .gratia {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font: 18px "MontserratBold", sans-serif;
+}
+
+.social-buttons {
+    margin-top: 30px;
+}
+
+.social-buttons a {
+    text-decoration: none;
+}
+
+.social {
+    display: inline-block;
+    background: url("../images/social.png") no-repeat;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    margin-right: 14px;
+}
+
+.tw {
+    background-position: -25px 0;
+}
+
+.gg {
+    background-position: -50px 0;
+}
+
+.menu-content, .meal-content {
+    padding-bottom: 180px;
+    background-image: linear-gradient(to top, #fff 0%, #edeef1 20%, #edeef1 50%, #edeef1 20%, #fff 100%);
+    border-top: 1px solid #eee;
+}
+
+.menu-content div {
+    margin: 70px 30px;
+}
+
+.menu-content h3 {
+    margin-bottom: 28px;
+    color: #000;
+}
+
+.menu-content p {
+    margin-top: 28px;
+}
+.menu-list {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 170px;
+}
+
+.menu-list a {
+    text-decoration: none;
+}
+
+.menu-list hr {
+    color: #eee;
+}
+
+.menu-list li {
+    width: 30%;
+    overflow: hidden;
+    margin-bottom: 3%;
+    background-color: #fff;
+}
+
+.menu-list img {
+    height: 20vw;
+    width: 100%;
+}
+
+.meal {
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 840px;
+    overflow: hidden;
+}
+
+.meal img {
+    width: 650px;
+    height: 1200px;
+    transform: translateY(-30%);
+}
+
+.meal-info {
+    width: 650px;
+    background-color: #fff;
+}
+
+.meal-name {
+    padding: 0 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid #eee;
+    height: 363px;
+}
+
+.meal-name h3 {
+    margin-bottom: 30px;
+}
+
+.meal-name p {
+    margin-top: 30px;
+}
+
+.meal-components {
+    height: 237px;
+    border-bottom: 1px solid #eee;
+    padding: 0 74px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meal-components h4 {
+    color: #000;
+    margin-right: 64px;
+}
+
+.meal-price {
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.meal-price h3 {
+    font-size: 72px;
+    color: #829c2c;
+}
+
+
+@media (min-width: 1120px) and (max-width: 1399px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .container {
+        width: 970px;
+        padding: 0 20px;
+    }
+
+    h2, h3 {
+        font: 36px "MontserratBold", sans-serif;
+    }
+
+    h2 {
+        margin-top: 100px;
+    }
+
+    p {
+        font: 18px "CrimsonTextItalic", sans-serif;
+    }
+    .scroll {
+        position: absolute;
+        bottom: 2%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .container {
+        width: 750px;
+    }
+
+    h2, h3 {
+        font: 24px "MontserratBold", sans-serif;
+    }
+
+    h2 {
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font: 14px "CrimsonTextItalic", sans-serif;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .welcome-section {
+        height: auto;
+    }
+
+    .slider img {
+        max-width: 580px;
+        min-height: 500px;
+        margin: 0 auto;
+    }
+
+    .owl-carousel .owl-controls .owl-nav .owl-prev {
+        height: 50px;
+        width: 55px;
+    }
+
+    .owl-carousel .owl-controls .owl-nav .owl-next {
+        height: 50px;
+        width: 55px;
+    }
+
+    .how-we-reach-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .how-we-reach-list li {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .scroll {
+        position: absolute;
+        bottom: 2%;
+    }
+
+    .menu-list li {
+        width: 45%;
+    }
+
+    .menu-list img {
+        height: 30vw;
+    }
+
+    .meal {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    .meal img {
+        transform: none;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        width: auto;
+        padding: 0 20px;
+    }
+
+    h2, h3 {
+        font: 24px "MontserratBold", sans-serif;
+    }
+
+    h2 {
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font: 14px "CrimsonTextItalic", sans-serif;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .welcome-section {
+        height: auto;
+    }
+
+    .scroll {
+        position: absolute;
+        bottom: 2%;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .how-we-reach-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .how-we-reach-list li {
+        width: 90%;
+        margin-bottom: 20px;
+        min-height: 300px;
+    }
+
+    .white-section {
+        width: 90%;
+    }
+
+    .white-section .button {
+        padding: 15px 25px;
+        font: 14px "MontserratBold", sans-serif;
+    }
+
+    .slider {
+        width: 90%;
+    }
+
+    .slider img {
+        max-width: 330px;
+        min-height: 150px;
+    }
+
+    .owl-carousel .owl-controls .owl-nav .owl-prev {
+        height: 50px;
+        width: 55px;
+    }
+
+    .owl-carousel .owl-controls .owl-nav .owl-next {
+        height: 50px;
+        width: 55px;
+    }
+
+    .menu-list li {
+        width: 90%;
+    }
+
+    .menu-list img {
+        height: 60vw;
+    }
+
+    .meal {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    .meal img {
+        transform: none;
+        width: 350px;
+        height: 550px;
+    }
+
+    .meal-info {
+        width: 340px;
+    }
+
+    .meal-components h4 {
+        margin-right: 14px;
+    }
+
+}
