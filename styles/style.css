@@ -129,6 +129,28 @@ color: #d89b64;
     top: calc(50% - 55px);
 }
 
+.owl-dot {
+    background: url("../images/dot1.png") no-repeat;
+    width: 19px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.owl-dot:nth-child(2n) {
+    background: url("../images/dot2.png") no-repeat;
+    color: #fff;
+    width: 19px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.owl-dot:nth-child(3n) {
+    background: url("../images/dot3.png") no-repeat;
+    width: 19px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
 .welcome-section .bottom {
     height: 60px;
 }
