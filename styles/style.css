@@ -641,29 +641,6 @@ footer .gratia {
     }
 }
 
-@media (min-width: 568px) and (max-width: 767px){
-    .menu-content header {
-        margin-bottom: -110px;
-    }
-
-    .section-header {
-        background: url(../images/gratia.png) 50% no-repeat;
-        background-size: contain;
-    }
-
-    .menu-list li {
-        width: 47%;
-    }
-
-    .menu-list img {
-        height: 34vw;
-    }
-
-    .owl-dot {
-        display: none;
-    }
-}
-
 
 
 @media (max-width: 767px) {
@@ -845,4 +822,32 @@ footer .gratia {
         display: none;
     }
 
+}
+
+
+@media (min-width: 568px) and (max-width: 767px){
+    .menu-content header {
+        margin-bottom: -110px;
+    }
+
+    .section-header {
+        background: url(../images/gratia.png) 50% no-repeat;
+        background-size: contain;
+    }
+
+    .menu-list li {
+        width: 47%;
+    }
+
+    .menu-list img {
+        height: 34vw;
+    }
+
+    .owl-dot {
+        display: none;
+    }
+
+    .welcome-section {
+        height: 600px;
+    }
 }
