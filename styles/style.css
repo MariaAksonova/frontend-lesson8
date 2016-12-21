@@ -635,6 +635,10 @@ footer .gratia {
     .meal img {
         transform: none;
     }
+
+    .owl-dot {
+        display: none;
+    }
 }
 
 @media (min-width: 568px) and (max-width: 767px){
@@ -653,6 +657,10 @@ footer .gratia {
 
     .menu-list img {
         height: 34vw;
+    }
+
+    .owl-dot {
+        display: none;
     }
 }
 
@@ -831,6 +839,10 @@ footer .gratia {
         font: 14px "MontserratRegular", sans-serif;
         line-height: 30px;
         text-align: center;
+    }
+
+    .owl-dot {
+        display: none;
     }
 
 }
