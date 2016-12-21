@@ -177,10 +177,6 @@ color: #d89b64;
     max-width: 100%;
 }
 
-.flex-container .smoothies {
-    height: 690px;
-}
-
 .flex-item {
     position: relative;
     width: 30%;
@@ -193,7 +189,7 @@ color: #d89b64;
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 3px;
     left: 0;
     background: rgba(0,0,0, .6);
     color: #d89b64;
@@ -201,6 +197,7 @@ color: #d89b64;
     flex-direction: column;
     justify-content: center;
     transition: all .3s ease-out;
+    padding: 0 10px;
 }
 
 .flex-item div p {
@@ -618,15 +615,35 @@ footer .gratia {
     }
 }
 
+@media (min-width: 568px) and (max-width: 767px){
+    .menu-content header {
+        margin-bottom: -110px;
+    }
+
+    .section-header {
+        background: url(../images/gratia.png) 50% no-repeat;
+        background-size: contain;
+    }
+
+    .menu-list li {
+        width: 47%;
+    }
+
+    .menu-list img {
+        height: 34vw;
+    }
+}
+
+
 
 @media (max-width: 767px) {
     .container {
         width: auto;
-        padding: 0 20px;
+        padding: 0 28px;
     }
 
     h2, h3 {
-        font: 24px "MontserratBold", sans-serif;
+        font: 26px "MontserratBold", sans-serif;
     }
 
     h2 {
@@ -635,7 +652,7 @@ footer .gratia {
     }
 
     p {
-        font: 14px "CrimsonTextItalic", sans-serif;
+        font: 16px "CrimsonTextItalic", sans-serif;
     }
 
     .main-nav {
@@ -645,11 +662,42 @@ footer .gratia {
 
     .welcome-section {
         height: auto;
+        padding-bottom: 0;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .scroll {
-        position: absolute;
-        bottom: 2%;
+        position: inherit;
+        margin-bottom: 64px;
+    }
+
+    .welcome-section .button {
+        position: inherit;
+        margin-bottom: 42px;
+        padding: 14px 40px;
+    }
+
+    .section-header {
+        background: url(../images/gratia.png) 50% -5% no-repeat;
+        background-size: contain;
+    }
+
+    .how-we-reach header {
+        margin-bottom: 0;
+    }
+
+    .perfection header {
+        margin-bottom: 0;
+    }
+
+    .menu-content header {
+        margin-bottom: -200px;
     }
 
     .flex-container {
@@ -662,43 +710,61 @@ footer .gratia {
         margin-bottom: 20px;
     }
 
+    .how-we-reach {
+        padding-bottom: 100px;
+    }
+
     .how-we-reach-list {
         display: flex;
         flex-direction: column;
     }
 
     .how-we-reach-list li {
-        width: 90%;
+        width: 86%;
         margin-bottom: 20px;
-        min-height: 300px;
+        min-height: 276px;
     }
 
-    .white-section {
-        width: 90%;
+    .details {
+        height: 550px;
     }
 
     .white-section .button {
-        padding: 15px 25px;
-        font: 14px "MontserratBold", sans-serif;
+        padding: 10px 4px;
+        font: 12px "MontserratBold", sans-serif;
+    }
+
+    .button-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .inside {
+        padding: 0 2px;
+        width: 254px;
+        height: 234px;
+        margin: 26px;
     }
 
     .slider {
-        width: 90%;
+        width: 70%;
     }
 
     .slider img {
-        max-width: 330px;
-        min-height: 150px;
+        max-width: 280px;
+        min-height: 100px;
     }
 
     .owl-carousel .owl-controls .owl-nav .owl-prev {
         height: 50px;
         width: 55px;
+        left: 0;
+        top: calc(50% - 14px);
     }
 
     .owl-carousel .owl-controls .owl-nav .owl-next {
         height: 50px;
         width: 55px;
+        top: calc(50% - 14px);
     }
 
     .menu-list li {
@@ -728,7 +794,21 @@ footer .gratia {
     }
 
     .meal-components h4 {
-        margin-right: 14px;
+        margin-right: 0;
+        font-size: 24px;
+    }
+
+    .meal-components {
+        padding: 50px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .meal-components p {
+        font: 14px "MontserratRegular", sans-serif;
+        line-height: 30px;
+        text-align: center;
     }
 
 }
